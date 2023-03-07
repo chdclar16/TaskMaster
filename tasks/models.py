@@ -19,3 +19,6 @@ class Task(models.Model):
         related_name="tasks",
         on_delete=models.CASCADE,
     )
+
+    def __str__(self):
+        return self.name
